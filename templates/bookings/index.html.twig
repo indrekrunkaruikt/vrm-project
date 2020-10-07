@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    <title>Booking Application</title>
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/base.css"/>
+{% endblock %}
+
+{% block body %}
+    {{ include('bookings/header.html.twig') }}
+    <div class="content">
+        <div class="content">
+            {% block content %}
+                {{ include('bookings/create_booking.html.twig') }}
+            {% endblock %}
+        </div>
+    </div>
+    {{ include('bookings/footer.html.twig') }}
+{% endblock %}

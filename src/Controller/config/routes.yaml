@@ -1,0 +1,15 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+# the "app_lucky_number" route name is not important yet
+#app_lucky_number:
+#     path: /lucky/number
+#     controller: App\Controller\LuckyController::number
+bookings:
+  path: /bookings
+  controller: App\Controller\Bookings
+
+create_bookings:
+  path: /create_bookings
+  controller: App\Controller\CreateBookings
