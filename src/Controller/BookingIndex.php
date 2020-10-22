@@ -26,7 +26,7 @@ use App\Entity\Booking;
 class BookingIndex extends AbstractController
 {
     /**
-     * @Route("/create_booking")
+     * @Route("/create_booking", name="create_booking")
      */
     public function create_booking(Request $request)
     {
@@ -70,7 +70,8 @@ class BookingIndex extends AbstractController
                 'required' => true
             ])
             ->add('additionalInformation', TextareaType::class, [
-                'required' => false
+                'required' => false,
+                'empty_data' => 'No additional information'
             ])
             ->add('submit', SubmitType::class, ['label' => 'Create Bookings'])
             ->getForm();

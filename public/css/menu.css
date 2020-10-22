@@ -1,0 +1,11 @@
+.menu{
+    display: flex;
+    background-color: silver;
+    height: 4em;
+    padding-left: 6em;
+    align-items: baseline;
+}
+.menu a{
+    margin-top: 2em;
+    padding-left: 2em;
+}
